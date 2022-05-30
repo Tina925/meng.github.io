@@ -21,17 +21,33 @@
 						<header class="major">
 							<h2><strong> DEPTH FIRST SEARCH PROJECT</strong></h2>
 						</header>
-						<p> This is a project I worked on in my freshman year. 
-							In order to improve safety and increase mobility around campus, we designed a speed trap sensor to put in intersection on campus in order to allow pedestrians to be warned if bikes or any other oncoming traffic is comming. 
-							My group did a thorough background research and used protottping, testing, and weighted decision matric (WDM) to construct the final design. 
-							<br />Below is the link to my final report document. 
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://docs.google.com/document/d/1bNGOUK7zPd50oAe8XHugkjQhvIhu_u3H/edit" ><img src="images/project/bikeshare.jpg" class="image fit thumb"alt="" /></a>
+						<p> This is a project I worked on in my sephomore year. 
+							This project includes conplex structures, 2D array coordinates, and depth first search. 
+							This is the first time I get in touch with recursion in C language. This project uses two enumerations. The first defines the types of maze squares:
+							
+							<p>typedef enum SquareType {</p>
+								<p>WALL = '#',</p>
+								<p>SPACE = '.',</p>
+								<p>START = 's',</p>
+								<p>END = 'e'</p>
+							<p>} SquareType;</p>
 
-						
+						<p>The second enumeration defines the possible directions:</p>
+
+							<p>typedef enum PathType {</p>
+								<p>NORTH = 'n',</p>
+								<p>SOUTH = 's',</p>
+								<p>EAST = 'e',</p>
+								<p>WEST = 'w'</p>
+							<p>} PathType;</p>
+						<p>With those two enumerations in mind, I then construct the complex structure to clarify the ways visited, and x y postions etc.</p>
+						<p>Below are the most important conceptual code in this recustion process. In the depthFirstSolve Function, I first listed out two condition that if is at end or 
+							not in condition Squre type. Then I listed out four directions then how will the position change corresponds with each direction. Then I put it in the for loop 
+							which is the recursion process overall. 
+						</p>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://github.com/PurdueECE264/hw9-Tina925" ><img src="images/project/depth.jpg" class="image fit thumb"alt="" /></a>
+						Click in to see the overall project coding. 
 					</section>
-
-				
-
 	</body>
 </html>
