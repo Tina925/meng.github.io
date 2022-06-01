@@ -53,6 +53,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	
 }
 
 mark {
@@ -83,7 +84,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: hwb(0 93% 7% / 0.808);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -110,14 +111,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #f6faf9;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #588ff5 !important;
 			text-decoration: none;
 		}
 
@@ -132,6 +132,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3219,3 +3220,26 @@ input, select, textarea {
 			}
 
 	}
+	/* Wrapper */
+
+	#wrapper {
+		width: 64em;
+		max-width: calc(100% - 4em);
+		margin: 0 auto;
+	}
+
+		@media screen and (max-width: 480px) {
+
+			#wrapper {
+				max-width: calc(100% - 2em);
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#wrapper {
+				max-width: 100%;
+			}
+
+		}
